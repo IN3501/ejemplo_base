@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Auxiliar 9 - IN3501</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+
+    <!-- Custom fonts for this template -->
+    <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <link href="{% static 'css/freelancer.min.css' %}" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+{% include 'app_de_in3501/menu.html' %}
+
+<!-- Header -->
+<header class="masthead bg-primary text-white text-center">
+    <div class="container">
+        <h1 class="text-uppercase mb-0">Formuario Dudas</h1>
+    </div>
+</header>
+
+<section id="inputs">
+    <div class="container">
+        <h1>Ingrese su Duda</h1>
+
+        <form action="#" autocomplete="off">
+
+            <div class="form-group">
+                <label for="nombre_alumno">Type: text</label>
+                <input type="text" class="form-control" id="nombre_alumno" placeholder="Nombre de alumno/a" name="inputText">
+            </div>
+
+            <div class="form-group">
+                <label for="texto_duda">Type: textarea</label>
+                <textarea class="form-control" id="texto_duda" rows="3"></textarea>
+            </div>
+
+
+            <div class="form-group">
+                <label for="email">Type: email</label>
+                <input type="email" class="form-control" id="email" placeholder="email de alumno" name="inputEmail">
+            </div>
+
+
+            <div class="form-group">
+                <label for="exampleSelect">Type: select</label>
+                <select class="form-control" id="exampleSelect" name="input Select">
+                    <option value="1">Opcion 1</option>
+                    <option value="2">Opcion 2</option>
+                    <option value="3">Opcion 3</option>
+                    <option value="4">Opcion 4</option>
+                    <option value="5">Opcion 5</option>
+                </select>
+            </div>
+
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+
+        </form>
+    </div>
+</section>
+
+{% include 'app_de_in3501/footer.html' %}
+</body>
+</html>
